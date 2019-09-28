@@ -160,6 +160,23 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.mainNav h1 {
+  text-align: center;
+  font-size: 32px;
+}
+.mainNav nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px;
+  padding: 10px;
+  margin: 20px;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +186,27 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btn {
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #22283A;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  width: 35%;
+}
+.btn:hover {
+  background-color: #515f8a;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    display: flex;
+    margin-bottom: 0 4%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
