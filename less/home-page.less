@@ -4,6 +4,9 @@
 
   .intro {
 
+    @media @mobile {
+      align-items: center;
+    }
 
     h2 {
       padding: 15px;
@@ -39,7 +42,6 @@
 
       @media @mobile {
         display: flex;
-        justify-content: center;
         margin-bottom: 0 4%;
         flex-direction: column;
         align-items: center;
@@ -51,7 +53,13 @@
 
     .sky {
       @media @mobile {
-        display: flex;
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @mobile {
+        display: none;
       }
     }
   }
@@ -75,8 +83,26 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      display: flex;
+      margin-bottom: 0 4%;
+      flex-direction: column;
+      align-items: center;
+      padding: 5%;
+      width: 100%;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        display: flex;
+        margin-bottom: 0 4%;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -84,12 +110,25 @@
 
       p {
         margin-bottom: 26px;
+
+
+      }
+
+      @media @mobile {
+        order: 2;
       }
 
       .btn {
         .btn-style(10px 30px, 10px, @btn-bg-color, white, pointer);
         font-size: @small;
         width: 35%;
+        text-align: center;
+
+        @media @mobile {
+          width: 100%;
+          height: 50%;
+          text-align: center;
+        }
       }
     }
 
@@ -97,11 +136,26 @@
       width: 46%;
       margin-left: 4%;
 
+      @media @mobile {
+        display: flex;
+        margin-bottom: 0 4%;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        width: 100%;
+      }
+
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+
+
       }
+
+
     }
   }
 }
