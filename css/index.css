@@ -160,6 +160,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.mainNav {
+  background-color: #F1F1F1;
+}
 .mainNav h1 {
   text-align: center;
   font-size: 32px;
@@ -176,6 +179,9 @@ p {
 }
 a {
   text-decoration: none;
+}
+footer {
+  background-color: #F1F1F1;
 }
 footer {
   color: #22283B;
